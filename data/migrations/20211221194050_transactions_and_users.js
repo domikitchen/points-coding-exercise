@@ -2,8 +2,8 @@
 exports.up = function(knex) {
     return knex.schema
         .createTable('transaction', function (table) {
-            table.string('transaction_id');
-            table.string('user_id');
+            table.increments('transaction_id');
+            table.string('payer');
             table.integer('points');
             table.timestamp('timestamp');
         });
