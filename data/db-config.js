@@ -1,6 +1,8 @@
 require('dotenv').config();
 const knex = require('knex');
 
-const knexConfig = require('../knexfile.js')[process.env.KNEX_ENV || 'development']
+// sets the knex
+// normally would have a conditional for a prodction
+const knexConfig = require('../knexfile.js')['development']
 
 module.exports = knex(knexConfig);

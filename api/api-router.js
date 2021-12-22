@@ -26,7 +26,7 @@ router.get('/balances', (request, response) => {
         });
 });
 
-router.post('/makeTransaction', validateTransactionInputs, validateTransactionAmount, (request, response) => {
+router.post('/transaction', validateTransactionInputs, validateTransactionAmount, (request, response) => {
     let transac = request.body;
 
     // if a timestamp is not provided the local date and time will be assigned
@@ -44,7 +44,7 @@ router.post('/makeTransaction', validateTransactionInputs, validateTransactionAm
         });
 });
 
-router.post('/usePoints', validateNegativeNumber, (request, response) => {
+router.post('/spendPoints', validateNegativeNumber, (request, response) => {
     let points = request.body.points;
 
     api.removePoints(points)

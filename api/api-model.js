@@ -13,7 +13,7 @@ function findAllTransactions() {
 
 function findCurrentBalances() {
     // placeholder object
-    currentBalances = {}
+    currentBalances = {};
 
     return findAllTransactions()
         .then(transactions => {
