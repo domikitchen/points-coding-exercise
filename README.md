@@ -8,6 +8,9 @@ or
 
 # Endpoints
 
+
+## Get Requests
+
 `get /api`
 
 Response:
@@ -58,6 +61,14 @@ Response:
 }
 
 ```
+
+`get /reset`
+
+```
+this will reset the database to it's inital seed data
+```
+
+## Post Requests
 
 `post /api/transaction`
 
