@@ -1,6 +1,6 @@
 # Fetch Points Coding Exercise
 
-- Link to deployed API https://dashboard.heroku.com/apps/fetch-points-coding-exercise/deploy/github
+- Link to deployed API https://fetch-points-coding-exercise.herokuapp.com/
 
 or
 - Download repository and run it locally on port 5000
